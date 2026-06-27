@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnquiryForm</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 500px;
+            width: 320px;
+            position:absolute;
+            right: -250px;
+            top: 50px;
+            background: linear-gradient(blue,pink,red); 
+            border-radius: 10px;
+            box-shadow: 10px 10px 20px black;
+            transition: 0.5s;
+
+        }
+        .box:hover{
+            right:0px;
+        }
+        .left{
+            width: 50px;
+            float: left;
+            background-color: green;
+            color: white;
+            text-align: center;
+            padding-top: 0;
+            border-radius: 10px 0 0 10px;
+            text-align: center;
+            height: 100%;
+            font-size: 40px;
+            font-weight: bold;
+
+        }
+        .right{
+            
+            width: 270px;
+            float: left;
+            padding: 15px;
+            color: white;
+            padding-top: 50px;
+
+            
+
+        }
+
+        .right h2{
+            text-align: center;
+        }
+        label{
+            font-weight: bold;
+        }
+        .a{
+            width: 100%;
+            height: 40px;
+            margin: 6px 0 12px;
+            border: none;
+            outline: 0px;
+            border-radius: 6px;
+            padding: 10px;
+
+        }
+        textarea.a{
+            height: 70px;
+            resize: none;
+
+        }
+        .b{
+            width: 100%;
+            height: 40px;
+            
+            background: linear-gradient(45deg,pink,red);
+            color: white;
+            font-weight: bold ;
+            font-size: 20px;
+            cursor:pointer;
+            border: none;
+            padding:10px;
+            transition: 0,3s;
+
+        }
+        .b:hover{
+            background: linear-gradient( 45deg, blue,pink,red);
+            color: white;
+            
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="left"> E<br>N<br> Q<br>U<br>I<br>R<br>Y
+        </div>
+    
+    <div class="right">
+        <h1>
+            Enquiry Form
+        </h1>
+        <form action="">
+            <label for="name">Name</label><br>
+            <input type="text"placeholder="Enter name" class="a"><br>
+             <label for="emmail">Email</label><br>
+             <input type="email"placeholder=" Enter email"class="a"><br>
+              <label for="contact">Contact</label><br>
+              <input type=" number"placeholder="Enter number" class="a"><br>
+               <label for="address">Address</label><br>
+               <textarea id="address" class="a" placeholder="Enter address"></textarea><br>
+               
+                <input type="button" value="Enquiry" class="b"><br>
+        </form>
+    </div>
+    </div >
+    
+</body>
+</html>
